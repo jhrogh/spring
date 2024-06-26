@@ -2,7 +2,6 @@ package com.example.springboot_doit;
 
 import com.example.springboot_doit.question.Question;
 import com.example.springboot_doit.question.QuestionRepository;
-import jakarta.transaction.Transactional;
 import java.time.LocalTime;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +13,7 @@ class SpringbootDoitApplicationTests {
 	@Autowired
 	private QuestionRepository questionRepository;
 
-	@Transactional
+//	@Transactional
 	@Test
 	void testJpa() {
 		Question q1 = new Question();
